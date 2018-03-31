@@ -17,7 +17,7 @@ func main() {
 		log.Fatalf("could not load tls cert: %s", err)
 	}
 
-	conn,err = grpc.Dial("igor:777", grpc.WithTransportCredentials(creds))
+	conn,err = grpc.Dial("localhost:777", grpc.WithTransportCredentials(creds))
 	if err != nil {
 		log.Fatalf("Did not connect: %s", err)
 	}

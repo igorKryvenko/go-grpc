@@ -1,7 +1,8 @@
-SERVER_OUT := "server.bin"
-CLIENT_OUT := "client.bin"
+BIN_DIR := "./bin"
+SERVER_OUT := "${BIN_DIR}/server.bin"
+CLIENT_OUT := "${BIN_DIR}/client.bin"
 API_OUT := "api/api.pb.go"
-PKG := "gitlab.com/pantomath-io/demo-grpc"
+PKG := "."
 SERVER_PKG_BUILD := "${PKG}/server"
 CLIENT_PKG_BUILD := "${PKG}/client"
 PKG_LIST := $(shell go list ${PKG}/... | grep -v /vendor/)

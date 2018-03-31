@@ -1,6 +1,6 @@
 BIN_DIR := "./bin"
-SERVER_OUT := "${BIN_DIR}/server.bin"
-CLIENT_OUT := "${BIN_DIR}/client.bin"
+SERVER_OUT := "${BIN_DIR}/server"
+CLIENT_OUT := "${BIN_DIR}/client"
 API_OUT := "api/api.pb.go"
 PKG := "."
 SERVER_PKG_BUILD := "${PKG}/server"
